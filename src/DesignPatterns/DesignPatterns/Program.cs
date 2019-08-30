@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             AdapterDemo.Run();
+            BridgeDemo.Run();
         }
     }
 }
