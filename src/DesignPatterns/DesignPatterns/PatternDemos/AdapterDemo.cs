@@ -1,6 +1,6 @@
 ﻿using DesignPatterns.Adapter;
 
-namespace DesignPatterns
+namespace DesignPatterns.PatternDemos
 {
     public class AdapterDemo
     {

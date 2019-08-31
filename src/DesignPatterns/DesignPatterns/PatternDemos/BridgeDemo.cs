@@ -1,6 +1,6 @@
 ﻿using DesignPatterns.Bridge;
 
-namespace DesignPatterns
+namespace DesignPatterns.PatternDemos
 {
     public class BridgeDemo
     {
