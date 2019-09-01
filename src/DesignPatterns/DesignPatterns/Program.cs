@@ -7,30 +7,26 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Adapter Demo");
-            Console.WriteLine("____________________");
-            Console.WriteLine();
-            Adapter.Run();
+            RunDemo("Adapter Demo", Adapter.Run);
+            RunDemo("Bridge Demo", Bridge.Run);
+            RunDemo("Builder Demo", Builder.Run);
+            RunDemo("Chain Of Responsibility Demo", ChainOfResponsibility.Run);
+            EndDemos();
+        }
 
+        private static void RunDemo(string demoTitle, Action demo)
+        {
+            Console.WriteLine(demoTitle);
+            Console.WriteLine("_____________________________________________");
+            Console.WriteLine();
+            demo();
             Console.WriteLine();
             Console.WriteLine();
+        }
 
-            Console.WriteLine("Bridge Demo");
-            Console.WriteLine("____________________");
-            Console.WriteLine();
-            Bridge.Run();
-
-            Console.WriteLine();
-            Console.WriteLine();
-
-            Console.WriteLine("Builder Demo");
-            Console.WriteLine("____________________");
-            Console.WriteLine();
-            Builder.Run();
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("________________________________________");
+        private static void EndDemos()
+        {
+            Console.WriteLine("__________________________________________________________________________________________");
             Console.WriteLine("press a key to stop demos");
             Console.ReadLine();
         }
