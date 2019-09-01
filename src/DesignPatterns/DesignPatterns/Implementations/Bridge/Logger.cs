@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.Bridge
+﻿namespace DesignPatterns.Implementations.Bridge
 {
     public abstract class Logger
     {

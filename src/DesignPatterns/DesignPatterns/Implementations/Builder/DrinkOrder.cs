@@ -1,6 +1,6 @@
-﻿using static DesignPatterns.Builder.CoffeeDrink;
+﻿using static DesignPatterns.Implementations.Builder.CoffeeDrink;
 
-namespace DesignPatterns.Builder
+namespace DesignPatterns.Implementations.Builder
 {
     public class DrinkOrder
     {

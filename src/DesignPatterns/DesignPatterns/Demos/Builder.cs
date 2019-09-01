@@ -1,10 +1,10 @@
-﻿using DesignPatterns.Builder;
+﻿using DesignPatterns.Implementations.Builder;
 using System;
-using static DesignPatterns.Builder.CoffeeDrink;
+using static DesignPatterns.Implementations.Builder.CoffeeDrink;
 
-namespace DesignPatterns.PatternDemos
+namespace DesignPatterns.Demos
 {
-    public class BuilderDemo
+    public class Builder
     {
         public static void Run()
         {

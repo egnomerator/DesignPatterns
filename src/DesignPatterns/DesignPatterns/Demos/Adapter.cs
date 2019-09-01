@@ -1,8 +1,8 @@
-﻿using DesignPatterns.Adapter;
+﻿using DesignPatterns.Implementations.Adapter;
 
-namespace DesignPatterns.PatternDemos
+namespace DesignPatterns.Demos
 {
-    public class AdapterDemo
+    public class Adapter
     {
         public static void Run()
         {

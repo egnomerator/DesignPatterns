@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.Adapter
+namespace DesignPatterns.Implementations.Adapter
 {
     public class IncompatibleLogger : IIncompatibleLogger
     {

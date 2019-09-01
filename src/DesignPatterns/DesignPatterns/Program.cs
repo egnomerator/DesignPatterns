@@ -1,4 +1,4 @@
-﻿using DesignPatterns.PatternDemos;
+﻿using DesignPatterns.Demos;
 using System;
 
 namespace DesignPatterns
@@ -10,7 +10,7 @@ namespace DesignPatterns
             Console.WriteLine("Adapter Demo");
             Console.WriteLine("____________________");
             Console.WriteLine();
-            AdapterDemo.Run();
+            Adapter.Run();
 
             Console.WriteLine();
             Console.WriteLine();
@@ -18,7 +18,7 @@ namespace DesignPatterns
             Console.WriteLine("Bridge Demo");
             Console.WriteLine("____________________");
             Console.WriteLine();
-            BridgeDemo.Run();
+            Bridge.Run();
 
             Console.WriteLine();
             Console.WriteLine();
@@ -26,10 +26,11 @@ namespace DesignPatterns
             Console.WriteLine("Builder Demo");
             Console.WriteLine("____________________");
             Console.WriteLine();
-            BuilderDemo.Run();
+            Builder.Run();
 
             Console.WriteLine();
             Console.WriteLine();
+            Console.WriteLine("________________________________________");
             Console.WriteLine("press a key to stop demos");
             Console.ReadLine();
         }

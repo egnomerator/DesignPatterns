@@ -1,8 +1,8 @@
-﻿using DesignPatterns.Bridge;
+﻿using DesignPatterns.Implementations.Bridge;
 
-namespace DesignPatterns.PatternDemos
+namespace DesignPatterns.Demos
 {
-    public class BridgeDemo
+    public class Bridge
     {
         public static void Run()
         {

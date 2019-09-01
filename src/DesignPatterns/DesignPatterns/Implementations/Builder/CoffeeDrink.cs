@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.Builder
+﻿namespace DesignPatterns.Implementations.Builder
 {
     public class CoffeeDrink
     {

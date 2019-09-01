@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Bridge
+﻿namespace DesignPatterns.Implementations.Bridge
 {
     public class FormatterStandard : IFormatter
     {

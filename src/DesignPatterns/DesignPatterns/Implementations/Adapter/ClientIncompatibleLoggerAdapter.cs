@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Adapter
+﻿namespace DesignPatterns.Implementations.Adapter
 {
     public class ClientIncompatibleLoggerAdapter : ILoggerClientRequires
     {

@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
-using static DesignPatterns.Builder.CoffeeDrink;
+using static DesignPatterns.Implementations.Builder.CoffeeDrink;
 
-namespace DesignPatterns.Builder
+namespace DesignPatterns.Implementations.Builder
 {
-    public class LatteBuilder : CoffeeBuilder
+    public class AmericanoBuilder : CoffeeBuilder
     {
         public override void AddMilkOrWater()
         {
-            _coffeeDrink.MilkOrWater = MilkWater.Milk;
+            _coffeeDrink.MilkOrWater = MilkWater.Water;
         }
 
         public override void MapSizeToShots()
         {
             _sizeToShotsMap = new Dictionary<DrinkSize, int>
             {
-                {DrinkSize.Tall, 1},
-                {DrinkSize.Grande, 2},
-                {DrinkSize.Venti, 2}
+                {DrinkSize.Tall, 2},
+                {DrinkSize.Grande, 3},
+                {DrinkSize.Venti, 4}
             };
         }
 
@@ -32,7 +32,7 @@ namespace DesignPatterns.Builder
 
         public override void SetDrinkName()
         {
-            _coffeeDrink.DrinkName = "Latte";
+            _coffeeDrink.DrinkName = "Americano";
         }
     }
 }
