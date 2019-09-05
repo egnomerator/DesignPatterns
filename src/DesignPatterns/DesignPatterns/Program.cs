@@ -11,6 +11,8 @@ namespace DesignPatterns
             RunDemo("Bridge Demo", Bridge.Run);
             RunDemo("Builder Demo", Builder.Run);
             RunDemo("Chain Of Responsibility Demo", ChainOfResponsibility.Run);
+            RunDemo("Command Demo", Command.Run);
+            RunDemo("Composite Demo", Composite.Run);
             EndDemos();
         }
 
