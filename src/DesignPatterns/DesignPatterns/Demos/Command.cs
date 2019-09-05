@@ -15,7 +15,7 @@ namespace DesignPatterns.Demos
 
             var controller = new SimpleSoundBarController(powerCommand, muteCommand, increaseVolumeCommand, decreaseVolumeCommand);
 
-            controller.Mute();
+            controller.Mute(); // should result in message "Turn power on first."
             controller.Power();
             controller.IncreaseVolume();
             controller.IncreaseVolume();
