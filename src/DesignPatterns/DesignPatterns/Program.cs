@@ -13,6 +13,7 @@ namespace DesignPatterns
             RunDemo("Chain Of Responsibility Demo", ChainOfResponsibility.Run);
             RunDemo("Command Demo", Command.Run);
             RunDemo("Composite Demo", Composite.Run);
+            RunDemo("Decorator Demo", Decorator.Run);
             EndDemos();
         }
 

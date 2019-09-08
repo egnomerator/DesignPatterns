@@ -18,7 +18,7 @@ namespace DesignPatterns.Implementations.Composite
 
         public void PrintMe()
         {
-            Console.WriteLine($"{new string('-', _depth)}{_name}");
+            Console.WriteLine(Utility.GetNodeName(_depth, _name));
             _nodes.ForEach(n => n.PrintMe());
         }
     }
