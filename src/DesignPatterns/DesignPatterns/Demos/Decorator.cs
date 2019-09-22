@@ -13,16 +13,17 @@ namespace DesignPatterns.Demos
 
             DisplayOverrideResultInfo("Original Balance Due", invoice.GetBalanceDue());
 
-            var dollarDiscount = new DollarDiscount(invoice, 2000);
+            const int twoKDiscount = 2000;
+            var dollarDiscount = new DollarDiscount(invoice, twoKDiscount);
 
             DisplayOverrideResultInfo("   After 2K Discount", dollarDiscount.GetBalanceDue());
 
-            var fivePercent = 0.05m;
+            const decimal fivePercent = 0.05m;
             var percentageDiscount = new PercentageDiscount(dollarDiscount, fivePercent);
 
             DisplayOverrideResultInfo(" After 5 Percent Off", percentageDiscount.GetBalanceDue());
 
-            var ninetyKCap = 90000;
+            const int ninetyKCap = 90000;
             var cap = new Cap(percentageDiscount, ninetyKCap);
 
             DisplayOverrideResultInfo("       After 90K Cap", cap.GetBalanceDue());

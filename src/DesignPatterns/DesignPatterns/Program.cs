@@ -14,6 +14,7 @@ namespace DesignPatterns
             RunDemo("Command Demo", Command.Run);
             RunDemo("Composite Demo", Composite.Run);
             RunDemo("Decorator Demo", Decorator.Run);
+            RunDemo("Facade Demo", Facade.Run);
             EndDemos();
         }
 
