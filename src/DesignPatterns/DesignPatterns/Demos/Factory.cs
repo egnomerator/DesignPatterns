@@ -17,11 +17,10 @@ namespace DesignPatterns.Demos
             var archerFactory = new ArcherFactory();
             var army = new List<IFighter>
             {
-                knightFactory.CreateFighter(),
-                archerFactory.CreateFighter()
+                GetFighter(knightFactory),
+                GetFighter(archerFactory)
             };
-            var commander = new Commander(army);
-            commander.LaunchAttack();
+            army.ForEach(f => f.Attack());
 
             Console.WriteLine();
             Console.WriteLine("*ABSTRACT FACTORY*");
@@ -29,35 +28,18 @@ namespace DesignPatterns.Demos
 
             var humanBarracks = new HumanBarracks();
             var orcBarracks = new OrcBarracks();
-            var humanArmy = new List<IFighter>
-            {
-                humanBarracks.TrainMelee(),
-                humanBarracks.TrainRanged()
-            };
-            var orcArmy = new List<IFighter>
-            {
-                orcBarracks.TrainMelee(),
-                orcBarracks.TrainRanged()
-            };
-            var humanCommander = new Commander(humanArmy);
-            var orcCommander = new Commander(orcArmy);
+            var humanCommander = new Commander(humanBarracks);
+            var orcCommander = new Commander(orcBarracks);
+
+            humanCommander.RecruitArmy();
+            orcCommander.RecruitArmy();
             humanCommander.LaunchAttack();
             orcCommander.LaunchAttack();
         }
 
-        private class Commander
+        private static IFighter GetFighter(FighterFactory fighterFactory)
         {
-            private readonly List<IFighter> _army;
-
-            public Commander(List<IFighter> army)
-            {
-                _army = army;
-            }
-
-            public void LaunchAttack()
-            {
-                _army.ForEach(f => f.Attack());
-            }
+            return fighterFactory.CreateFighter();
         }
     }
 }
